@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let Constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let keyword = "";
+    do {
+        keyword =prompt('Nhập vào đây');
+        if (star.includes(keyword)) {
+            let index = star.indexOf(keyword);
+            alert(star[index] + 'thuộc chòm sao' + constellation[index]);
+        }else {
+            alert('Không có ngôi sao nào nhập lại');
+        }
+    }while (!star.includes(keyword));
+</script>
+</body>
+</html>
